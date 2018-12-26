@@ -1,0 +1,52 @@
+.meno{
+    width:100%;
+    height: 150px;
+}
+.meno ul > li{
+    display: inline-block;
+    box-sizing: border-box;
+    border:2px solid #cccccc;
+    margin: 0px;
+    color: #0a0a02;
+    background: #515766;
+    padding: 5px 0px 5px 0px;
+    width: 18%;
+    text-align: center;
+}
+.meno ul > li:hover{
+    background: #54c4cc;
+    color: aliceblue;
+    cursor: pointer;
+}
+.meno ul > li > ul{
+    position: absolute;
+    display: none;
+    top:100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+.meno ul > li:hover ul{
+    display: block;
+}
+.meno ul > li > ul > li{
+    display: inline-block;
+    background: #54c4cc;
+}
+p{
+    color: #fff73a;
+}
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .meno{
+        width: 50px;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 759px){
+    .meno{
+        width: 20px;
+    }
+}@media screen and (max-width: 1200px){
+    .meno{
+        width: 10px;
+    }
+}
